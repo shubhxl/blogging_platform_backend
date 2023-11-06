@@ -1,0 +1,58 @@
+{
+  "name": "blogging_platform_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc && npm run copy-assets",
+    "prestart": "npx knex migrate:latest --env configuration",
+    "start": "ts-node index.ts",
+    "dev": "tsc -w & nodemon .",
+    "migrate": "node-pg-migrate",
+    "copy-assets": "ts-node tools/copyAssets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhxl/blogging_platform_backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubhxl/blogging_platform_backend/issues"
+  },
+  "homepage": "https://github.com/shubhxl/blogging_platform_backend#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.20.2",
+    "connect-pg-simple": "^9.0.1",
+    "cookie-session": "^2.0.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.2",
+    "pg-promise": "^11.5.4"
+  },
+  "devDependencies": {
+    "@types/bcrypt-nodejs": "^0.0.31",
+    "@types/body-parser": "^1.19.4",
+    "@types/config": "^3.3.2",
+    "@types/connect-pg-simple": "^7.0.2",
+    "@types/express": "^4.17.20",
+    "@types/express-session": "^1.17.9",
+    "@types/jsonwebtoken": "^9.0.4",
+    "@types/node": "^20.8.10",
+    "@types/pg": "^8.10.7",
+    "@types/pg-format": "^1.0.4",
+    "config": "^3.3.6",
+    "js-yaml": "^4.1.0",
+    "knex": "^0.95.11",
+    "nodemon": "^3.0.1",
+    "pg": "^8.7.3",
+    "pg-format": "^1.0.4",
+    "pg-hstore": "^2.3.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}

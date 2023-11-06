@@ -1,0 +1,8 @@
+Database:
+  database: blogdb
+  port: 5432
+  user: root
+  password: root
+  host: localhost
+
+SECRET: $2a$10$xiuh3QjIjCeuv8XjCmQvseYdzo5/Z3f8.Io0MEJ2GQ8shCWlyRinG

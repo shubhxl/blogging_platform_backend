@@ -1,0 +1,11 @@
+node_modules
+config/local.yml
+config/AuthKey.p8
+.env
+dist
+coverage
+trivy
+.trivycache/
+/contrib
+/LICENSE
+local.yaml
